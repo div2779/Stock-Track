@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btnCreateAccnt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FBFAFA"
+    tools:context=".LoginEmail">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="412dp"
+        android:layout_height="56dp"
+        android:background="#CE0225EF"
+        android:backgroundTint="#FD03199C"
+        android:src="@drawable/stocktrack__3_"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/loginTextPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="90dp"
+        android:fontFamily="serif"
+        android:text="Authenticate\nUsing Phone Number"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:typeface="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSendOTP"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:text="Send OTP"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/countryCodeField" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="238dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="264dp"
+        android:text="New to StockTrack?"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSendOTP" />
+
+    <Button
+        android:id="@+id/btnCreateAcc"
+        android:layout_width="282dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="8dp"
+        android:text="Create Account"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/plusText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="45dp"
+        android:text="+"
+        android:textAlignment="center"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginTextPhone" />
+
+    <EditText
+        android:id="@+id/countryCodeField"
+        android:layout_width="41dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="6dp"
+        android:ems="10"
+        android:hint="123"
+        android:inputType="phone"
+        android:maxLength="3"
+        app:layout_constraintEnd_toStartOf="@+id/PhoneNumberField"
+        app:layout_constraintStart_toEndOf="@+id/plusText"
+        app:layout_constraintTop_toBottomOf="@+id/loginTextPhone" />
+
+    <EditText
+        android:id="@+id/PhoneNumberField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="89dp"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:maxLength="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/countryCodeField"
+        app:layout_constraintTop_toBottomOf="@+id/loginTextPhone" />
+
+    <EditText
+        android:id="@+id/OTPField"
+        android:layout_width="276dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="78dp"
+        android:ems="10"
+        android:hint="Enter OTP"
+        android:inputType="numberPassword"
+        android:maxLength="6"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSendOTP" />
+
+    <Button
+        android:id="@+id/btnVerifyOTP"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="5dp"
+        android:text="Verify OTP"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OTPField" />
+
+    <Button
+        android:id="@+id/btnResendOTP"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:enabled="false"
+        android:text="Resend OTP"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/btnVerifyOTP"
+        app:layout_constraintTop_toBottomOf="@+id/OTPField" />
+
+    <TextView
+        android:id="@+id/awaitToResendMsg"
+        android:layout_width="275dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="5dp"
+        android:text="Please wait for 60 seconds before resending OTP"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVerifyOTP" />
+
+    <!--    <com.google.android.material.textfield.TextInputLayout-->
+    <!--        android:layout_width="267dp"-->
+    <!--        android:layout_height="48dp"-->
+    <!--        android:hint="Password"-->
+
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.33"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.25"-->
+    <!--        app:passwordToggleEnabled="true">-->
+
+    <!--        <com.google.android.material.textfield.TextInputEditText-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="79dp"-->
+    <!--            android:ems="15"-->
+    <!--            android:inputType="textPassword"-->
+    <!--            android:textSize="30dp" />-->
+
+    <!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

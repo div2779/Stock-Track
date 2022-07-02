@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">StockTrack</string>
+    <string name="server_client_id">860814994311-nu30de28usls5opf1qgmf2q9g1m0382d.apps.googleusercontent.com</string>
+    <string name="title_activity_home_page">HomePage</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="searchHint">Search Stock Name</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profileScroll">Profile Options</string>
+</resources>

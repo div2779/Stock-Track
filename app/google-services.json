@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "860814994311",
+    "firebase_url": "https://stocktrack-860fb-default-rtdb.firebaseio.com",
+    "project_id": "stocktrack-860fb",
+    "storage_bucket": "stocktrack-860fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:860814994311:android:1a1bd6c1a00ccce53dc122",
+        "android_client_info": {
+          "package_name": "com.example.stocktrack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "860814994311-nu30de28usls5opf1qgmf2q9g1m0382d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGJpJIYGbL_A3Z2hA9XKXf7zP8h0szqoo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "860814994311-1jmepu1503igkpuo5d66i0ddc5434lsq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CE0225EF"
+    android:backgroundTint="#FD03199C"
+    tools:context=".LoginPage">
+
+    <Button
+        android:id="@+id/btnSignInGoogleRegMain"
+        android:layout_width="339dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#F1EAEA"
+        android:drawableLeft="@drawable/googleg_standard_color_18"
+        android:text="Continue With Google"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignInPhoneRegMain" />
+
+    <Button
+        android:id="@+id/btnSignInPhoneRegMain"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@color/teal_700"
+        android:drawableLeft="@android:drawable/stat_sys_phone_call"
+        android:shadowDx="15"
+        android:text="Continue With Mobile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignInEmailRegMain" />
+
+    <TextView
+        android:id="@+id/LoginMainText"
+        android:layout_width="307dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/abeezee_italic"
+        android:text="Welcome to StockTrack!\n\nPlease Login.."
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSignInEmailRegMain"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="30dp"
+        android:background="#D52121"
+        android:backgroundTint="#D52121"
+        android:drawableLeft="@android:drawable/sym_action_email"
+        android:paddingLeft="10dp"
+        android:text="Continue With E-Mail"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSignInRegMain"
+        android:layout_width="323dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="53dp"
+        android:text="Create Account"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="323dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="115dp"
+        android:text="New User?"
+        android:textAlignment="center"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignInGoogleRegMain" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/stocktrack__3_" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
